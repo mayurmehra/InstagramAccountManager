@@ -41,16 +41,14 @@ def showCommentsWithReplies(x):
     comments = requests.get(url, params={'access_token': creds['access_token']})
 
     # GET https://graph.facebook.com/{media_id}/comments/?fields=replies&access_token
-    # shows only the parent comment ID alond with all the replies to that parent comment
+    # shows only the parent comment ID along with all the replies to that parent comment
     arguments = {
         'fields': 'replies',
         'access_token': creds['access_token']
     }
     comment_replies = requests.get(url, params=arguments)
-
     parent_comments = comments.json()
     child_comments = comment_replies.json()
-
 
     for i in range(len(parent_comments["data"])):
         print(parent_comments["data"][i]["text"])

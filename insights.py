@@ -30,7 +30,3 @@ def impressions(object_id):
         n = info.json()["data"][0]["values"][1]["value"]
         time_periods[i] = n
     return time_periods
-
-
-media_id= get_media_id(0)
-impressions(instagram_user_id)
