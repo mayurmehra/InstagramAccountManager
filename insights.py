@@ -32,5 +32,5 @@ def impressions(object_id):
     return time_periods
 
 
-
+media_id= get_media_id(0)
 impressions(instagram_user_id)

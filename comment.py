@@ -51,6 +51,7 @@ def showCommentsWithReplies(x):
     parent_comments = comments.json()
     child_comments = comment_replies.json()
 
+
     for i in range(len(parent_comments["data"])):
         print(parent_comments["data"][i]["text"])
 
