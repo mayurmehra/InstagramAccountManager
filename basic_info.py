@@ -1,8 +1,11 @@
 import requests
 
+# access_token1 = requests.get("https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=5fd8bd389fce7a4ba01a38f39b59aae9&access_token=EAAHiIWO6rwABAHWqvlclhrNav5yrit1x9m3Ulgh6UkUqULbtUAhae7xneK3zl4z3SpF34mvo1awO9HVLu22DQsCfAvMY1ltWZAStNxwxZCIoiWk8jZCPQRZAKZCdTI4W2ZAPb51s7E093JpMBrMCkfgnVZA7jR2W2cR9lBSK3WZAso2GhQX4JRuXMRnCFoytr0tZBu7FBPBkfqbi60OojqQ51jIV4mL2f1VNR4vAR0EvYb3hYdwP2kkQJ")
+# access_token1.json()["access_token"]
+
 def getcreds():
     creds = dict()
-    creds['access_token'] = 'EAAHiIWO6rwABAJwhd2cBjuGoFyZAUBv0Hoal65hi4uO3mPbZBBu5YoL1YDP5vHMYYZAetTB9L3Ntp3ay7Q4loQswZAkzlF0sckL5vORnXkO0oxU0wgwXGB2PaxPHQwfZBUgYkvxkKrEDGQBGoYHZAae0f4PgcZAMGlKUC1Delr7exjbBSZAoV1ZCpvYeYKjJWxxdDqNBFUW3G8gZDZD'
+    creds['access_token'] = 'EAAHiIWO6rwABANpJC4cuFq3nFE78Kam8hVpQ12fzjzeZAuYAX9pNxhf5w3LdgOqdu6ZBeOJiMU2VAyZBPKCixtw3kZCKFGCsckRSZBCm6m6FapJ3VX44CZAWxbjdxiK4M4ZAj3JWEksO7Ap1HRjEIybNTFVSZBIcyJjIMeIPUqHzmEeuPc2JyfD9CnNdWPsaLU6oqXa6QWqbPPbtCsWK1xOIW2tngapROqQMPcOJRdTPMBpkjnHlmQyq'
     creds['graph_domain'] = 'https://graph.facebook.com/'
     creds['graph_version'] = 'v11.0'
     creds['base_url'] = creds['graph_domain'] + creds['graph_version'] + '/'
@@ -22,5 +25,3 @@ def get_media_id(x):
     media_id = media_stats.json()["business_discovery"]["media"]["data"][x]["id"]
     return media_id
 
-
-get_media_id(5)
