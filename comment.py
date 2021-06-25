@@ -3,8 +3,6 @@ import basic_info
 
 creds = basic_info.getcreds()
 
-#imp
-#mayur licks hairy balls
 
 parameters = {
     "fields": "business_discovery.username(richard_cranium708){followers_count,media_count,media{comments_count,like_count}}",
@@ -15,6 +13,7 @@ media_stats = requests.get(url=creds['base_url'] + creds['ig_userID'] + '/', par
 
 # media_id = media_stats.json()["business_discovery"]["media"]["data"][x]["id"] -->  where x is the number of post from
 # the most recent. i.e. x=3 implies the FOURTH post (x starts from 0) from the top
+
 
 def showComments(media_id):
     # shows the parent comment of a post; takes mediaID of the post as arguments.
@@ -172,4 +171,4 @@ def deleteComment(comment_id):
 # id = postComment(basic_info.get_media_id(6), "heya")
 # print(id)
 # postCommentReply(id, "nothing much just chilling")
-filterCommentsByUsername(basic_info.get_media_id(6), "comicalruffian")
+showComments(basic_info.get_media_id(6))
