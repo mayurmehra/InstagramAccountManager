@@ -3,7 +3,7 @@ import basic_info
 
 creds = basic_info.getcreds()
 
-#imp
+#Simp
 #mayur licks hairy balls
 
 parameters = {
