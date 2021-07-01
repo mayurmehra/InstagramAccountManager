@@ -19,7 +19,7 @@ def PostPhotoOnline(PostPhotoUrl, PostPhotoCaption):
            creds['access_token']
     response2 = requests.post(url2)
     print(response2.json())
-    
+
     # https://www.gstatic.com/webp/gallery/4.sm.jpg
     # https://imgur.com/gallery/VTcqsYu
     # http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/back07.jpg
