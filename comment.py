@@ -3,9 +3,6 @@ import basic_info
 
 creds = basic_info.getcreds()
 
-#imp
-#mayur licks hairy balls
-
 parameters = {
     "fields": "business_discovery.username(richard_cranium708){followers_count,media_count,media{comments_count,like_count}}",
     "access_token": creds['access_token']

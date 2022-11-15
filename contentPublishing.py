@@ -75,4 +75,4 @@ def PostVideoOnline(PostVideoUrl, PostVideoCaption):
 PostVideoUrl = input("Write/paste here your Url of Video you want to Upload")
 PostVideoCaption = input("Write here your Caption for Video you want to  Upload")
 
-PostVideoOnline(PostVideoUrl, PostVideoCaption);
+PostVideoOnline(PostVideoUrl, PostVideoCaption)
